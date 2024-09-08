@@ -1,0 +1,13 @@
+abhijith@DESKTOP-CQKCMKS:~$ sudo su
+[sudo] password for abhijith:
+root@DESKTOP-CQKCMKS:/home/abhijith# sudo su
+root@DESKTOP-CQKCMKS:/home/abhijith# cd /etc/postfix
+root@DESKTOP-CQKCMKS:/etc/postfix# cp main.cf  main.cf.bkp
+root@DESKTOP-CQKCMKS:/etc/postfix# vim main.cf
+root@DESKTOP-CQKCMKS:/etc/postfix# hostname
+DESKTOP-CQKCMKS
+root@DESKTOP-CQKCMKS:/etc/postfix# vim main.cf
+root@DESKTOP-CQKCMKS:/etc/postfix# cd /etc/postfix/sasl/
+root@DESKTOP-CQKCMKS:/etc/postfix/sasl# vim sasl_passwd
+root@DESKTOP-CQKCMKS:/etc/postfix/sasl# postmap sasl_passwd
+root@DESKTOP-CQKCMKS:/home/abhijith# echo 'This is the body of the email' | mail -s 'This is the subject' demoa980@gmail.com
